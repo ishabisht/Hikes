@@ -1,0 +1,55 @@
+/* MainContent.css */
+.hero-section {
+  position: relative;
+  min-height: 80vh;
+  overflow: hidden;
+}
+
+.image-section {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.image-wrapper {
+  height: 100%;
+  min-height: 400px;
+}
+
+.diagonal-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.line {
+  position: absolute;
+  background-color: #4ce0b3;
+  height: 2px;
+  left: -5%;
+  right: -5%;
+  transform: rotate(-10deg);
+}
+
+.line-1 {
+  top: 20%;
+}
+
+.line-2 {
+  bottom: 20%;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    min-height: auto;
+  }
+
+  .image-section {
+    clip-path: none;
+  }
+
+  .image-wrapper {
+    min-height: 300px;
+  }
+}
