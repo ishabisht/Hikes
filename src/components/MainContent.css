@@ -1,55 +1,147 @@
 /* MainContent.css */
 .hero-section {
   position: relative;
-  min-height: 80vh;
-  overflow: hidden;
+  height: 500px;
 }
 
-.image-section {
-  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.image-wrapper {
+.hero-section img {
+  width: 100%;
   height: 100%;
-  min-height: 400px;
+  object-fit: cover;
+}
+.upper-triangle,
+.lower-triangle {
+  position: absolute;
+  background: rgba(20,33,43);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.diagonal-lines {
-  position: absolute;
+.upper-triangle {
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 99% 0, 0 100%);
+  background: 
+  linear-gradient(to top left, #00ff00 51.2%, rgba(20,33,43) 50.5%);
+  
+
+}
+
+.lower-triangle {
   bottom: 0;
-  pointer-events: none;
+  right: 0;
+  width: 30%;
+  height: 30%;
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  background: 
+  linear-gradient(to bottom right, #00ff00 53%, rgba(20,33,43) 50.5%);
 }
 
-.line {
+.text-container {
   position: absolute;
-  background-color: #4ce0b3;
-  height: 2px;
-  left: -5%;
-  right: -5%;
-  transform: rotate(-10deg);
+  top: 10%; 
+  left: 5%; 
+  padding: 20px; 
 }
 
-.line-1 {
-  top: 20%;
+.text-container h3 {
+  margin-bottom: 10px;
+  font-style: normal; 
 }
 
-.line-2 {
-  bottom: 20%;
+.text-container .first-heading {
+  font-size: 3.5rem;
 }
-
-@media (max-width: 991.98px) {
+.text-container .second-heading {
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
   .hero-section {
-    min-height: auto;
+    height: 300px;
+  }
+  .text-container {
+    top: 5%; 
+    left: 5%; 
+    padding: 10px; 
+    font-size: 0.8rem;
+  }
+  .text-container .first-heading {
+    font-size: 1rem; 
+  }
+  .text-container .second-heading {
+    font-size: 0.8rem;
+  }
+}
+/* NatureWalk.css */
+.nature-walking-section {
+  position: relative;
+  height: 500px;
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+
+.nature-walking-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.upper-triangle1,
+.lower-triangle1 {
+  position: absolute;
+  background: rgba(20,33,43);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upper-triangle1 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 99% 0, 0 100%);
+  background: 
+  linear-gradient(to top left, #f55f0f 51.2%, rgba(20,33,43) 50.5%);
+  
+
+}
+
+.lower-triangle1 {
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 30%;
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  background: 
+  linear-gradient(to bottom right, #f55f0f 53%, rgba(20,33,43) 50.5%);
+}
+
+.text-container .main-heading {
+  font-size: 2rem;
+  
+}
+@media (max-width: 768px) {
+  .nature-walking-section {
+    height: 300px; 
   }
 
-  .image-section {
-    clip-path: none;
+  
+  .text-container .main-heading {
+    font-size: 1rem; 
   }
+}
+@media (max-width: 768px) {
+  h1 { font-size: 0.6rem; }
+  h2 { font-size: 0.5rem; }
+  p { font-size: 0.4rem; }
 
-  .image-wrapper {
-    min-height: 300px;
+  .custom-btn {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.3rem;
   }
 }

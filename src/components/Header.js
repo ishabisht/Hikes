@@ -4,12 +4,12 @@ import Logo from '../images/Logo.png'
 const Header = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
-       <img
-    src={Logo}
-    height="80"
-    className="d-inline-block align-top"
-    alt="Hiking Life Logo"
-  />
+      <img
+        src={Logo}
+        height="80"
+        className="d-inline-block align-top"
+        alt="Hiking Life Logo"
+      />
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto mt-4">
